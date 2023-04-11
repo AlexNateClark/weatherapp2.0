@@ -12,11 +12,49 @@
 
   <body>
     <div class="hero">
-      <h1>Lorem ipsum </h1>
-      <p> more Lorem ipsum dolor sit amet </p>
+      <div class="nav_bar">
+        <div class="todays_date">4/28/23</div>
+        <div class="info_block">
+          <p>Time</p>
+          <p>Temp</p>
+          <p>UV Index</p>
+          <p>Wind 2MPH</p>
+        </div>
+      </div>
 
-      <div class="container">
-        <div class="left_side_current_weather"></div>
+      <div class="header">
+        <div class="header_left">
+          <img class="weather_icon" src="./static/img/sun.png" alt="..." data-current-icon ></img>
+          <div class="header_current_temp">
+            <span data-current-temp>31</span>&deg;
+          </div>
+        </div>
+        <div class="header_right">
+          <div class="info_group">
+            <div class="label">HIGH</div>
+            <div><span data-current-high>32</span>&deg;</div>
+          </div>
+          <div class="info_group">
+            <div class="label">FL HIGH</div>
+            <div><span data-current-fl-high>45</span>&deg;</div>
+          </div>
+          <div class="info_group">
+            <div class="label">WIND</div>
+            <div><span data-current-wind>9</span>MPH</div>
+          </div>
+          <div class="info_group">
+            <div class="label">LOW</div>
+            <div><span data-current-low>32</span>&deg;</div>
+          </div>
+          <div class="info_group">
+            <div class="label">FL LOW</div>
+            <div><span data-current-fl-low>20</span>&deg;</div>
+          </div>
+          <div class="info_group">
+            <div class="label">PRECIP</div>
+            <div><span data-current-precip>.05</span>in</div>
+          </div>
+        </div>
       </div>
     </div>
 
