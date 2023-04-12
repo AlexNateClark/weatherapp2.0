@@ -22,40 +22,83 @@
         </div>
       </div>
 
-      <div class="header">
-        <div class="header_left">
-          <img class="weather_icon" src="./static/img/sun.png" alt="..." data-current-icon ></img>
-          <div class="header_current_temp">
-            <span data-current-temp>31</span>&deg;
+      <div class="top_container">
+        <div class="header">
+          <div class="header_left">
+            <img class="weather_icon" src="./static/img/sun.png" alt="..." data-current-icon ></img>
+            <div class="header_current_temp">
+              <span class="main_current_temp" data-current-temp>31</span>&deg;
+            </div>
+          </div>
+          <div class="header_right">
+            <div class="info_group">
+              <div class="label">HIGH</div>
+              <div><span data-current-high>32</span>&deg;</div>
+            </div>
+            <div class="info_group">
+              <div class="label">FL HIGH</div>
+              <div><span data-current-fl-high>45</span>&deg;</div>
+            </div>
+            <div class="info_group">
+              <div class="label">WIND</div>
+              <div><span data-current-wind>9</span><span class="label_sub_text"> MPH</span></div>
+            </div>
+            <div class="info_group">
+              <div class="label">LOW</div>
+              <div><span data-current-low>32</span>&deg;</div>
+            </div>
+            <div class="info_group">
+              <div class="label">FL LOW</div>
+              <div><span data-current-fl-low>20</span>&deg;</div>
+            </div>
+            <div class="info_group">
+              <div class="label">PRECIP</div>
+              <div><span data-current-precip>.05</span><span class="label_sub_text"> IN</span></div>
+            </div>
           </div>
         </div>
-        <div class="header_right">
-          <div class="info_group">
-            <div class="label">HIGH</div>
-            <div><span data-current-high>32</span>&deg;</div>
+
+
+        <section class="day_section" data-day-section>
+          <div class="day_card">
+            <img src="/static/img/cloud.png" class="weather_icons">
+            <div class="day-card-date">Monday</div>
+            <div>32&deg;</div>
           </div>
-          <div class="info_group">
-            <div class="label">FL HIGH</div>
-            <div><span data-current-fl-high>45</span>&deg;</div>
+          <div class="day_card">
+            <img src="/static/img/cloud.png" class="weather_icons">
+            <div class="day-card-date">Tuesday</div>
+            <div>32&deg;</div>
           </div>
-          <div class="info_group">
-            <div class="label">WIND</div>
-            <div><span data-current-wind>9</span>MPH</div>
+          <div class="day_card">
+            <img src="/static/img/cloud.png" class="weather_icons">
+            <div class="day-card-date">Wednesday</div>
+            <div>32&deg;</div>
           </div>
-          <div class="info_group">
-            <div class="label">LOW</div>
-            <div><span data-current-low>32</span>&deg;</div>
+          <div class="day_card">
+            <img src="/static/img/cloud.png" class="weather_icons">
+            <div class="day-card-date">Thurday</div>
+            <div>32&deg;</div>
           </div>
-          <div class="info_group">
-            <div class="label">FL LOW</div>
-            <div><span data-current-fl-low>20</span>&deg;</div>
+          <div class="day_card">
+            <img src="/static/img/cloud.png" class="weather_icons">
+            <div class="day-card-date">Friday</div>
+            <div>32&deg;</div>
           </div>
-          <div class="info_group">
-            <div class="label">PRECIP</div>
-            <div><span data-current-precip>.05</span>in</div>
+          <div class="day_card">
+            <img src="/static/img/cloud.png" class="weather_icons">
+            <div class="day-card-date">Saturday</div>
+            <div>32&deg;</div>
           </div>
-        </div>
+          <div class="day_card">
+            <img src="/static/img/cloud.png" class="weather_icons">
+            <div class="day-card-date">Sunday</div>
+            <div>32&deg;</div>
+          </div>
+        </section>
+
       </div>
+
     </div>
 
 

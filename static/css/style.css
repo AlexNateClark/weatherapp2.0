@@ -55,7 +55,6 @@ body{
   align-items: center;
 }
 .info_block{
-  /* background-color: blueviolet; */
   max-width: 50%;
   height: 100%;
   display: flex;
@@ -72,21 +71,71 @@ body{
 /* MAIN BODY */
 
 .top_container{
-  /* background-color: aqua; */
-  max-width: 23rem;
-  height: 35vh;
+  /* background-color: aquamarine; */
 }
-.left_side_current_weather{
-  max-width: 100%;
-  height: 100%;
+
+.header{
+  margin-top: 2rem;
+  max-width: 50%;
+  height: 15rem;
   background-color: #ffffff10;
-  color: aliceblue;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 2rem;
-  /* border: 2px solid rgb(255, 255, 255); */
+  display: flex;
+}
+
+/* NEEDS ATTENTION / ADD MEDIA QUERY - CHANGE TO COLUMN WHEN SMALLER SIZE  */
+
+.header_left{
+  max-width: 45%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-right: 2px solid #02020248;
+}
+.main_current_temp{
+  max-width: inherit;
+  font-size: xx-large;
 }
 .weather_icon{
-  max-width: 100%;
-  background-color: aquamarine;
+  margin-left: 1rem;
+  max-width: 50%;
+}
+
+
+.header_right{
+  display: grid;
+  width: 50%;
+  margin-top: 2.5rem;
+  justify-content: space-around;
+  gap: 1rem;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(2,auto);
+}
+.label_sub_text{
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+
+
+.day_section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10rem); 
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.day_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(81, 81, 81);
+  border-radius: 2rem;
+  padding: 0.25rem;
+}
+.day-card-date{
+  font-size: .75rem;
 }
