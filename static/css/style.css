@@ -1,7 +1,5 @@
 :root {
-  --text-color-light: rgb(255, 255, 255);
-  --text-color-meduium: rgb(133, 133, 133);
-  --text-color-dark: rgb(14, 14, 14);
+  --text-color-light: rgb(239, 246, 253);
 }
 *,
 *::before,
@@ -17,10 +15,9 @@
 body{
     margin: 0;
     font-family: system-ui;
-    background-image: url(../img/sunny_background_large.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-image: linear-gradient(to right bottom, #82d8ff, #0056df);
   }
 
 
@@ -28,36 +25,34 @@ body{
 
 
 
-
-
 /* TOP HEADER */
+
 .hero{
   padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: azure;
+  color: var(--text-color-light);
   max-width: 100%;
   height: 40rem;
-  /* background-image: url(../img/sunny_background_large.jpg); */
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .nav_bar{
-  /* background-color: antiquewhite; */
   max-width: 100%;
   height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .todays_date{
-  /* background-color: blueviolet; */
   max-width: 20%;
   height: 100%;
   display: flex;
   align-items: center;
 }
+
 .info_block{
   max-width: 50%;
   height: 100%;
@@ -78,7 +73,6 @@ body{
 /* TOP CONTAINER  */
 
 .top_container{
-  /* background-color: aquamarine; */
   display: flex;
   justify-content: space-around;
 }
@@ -101,10 +95,12 @@ body{
   gap: 2rem;
   border-right: 2px solid #02020248;
 }
+
 .main_current_temp{
   max-width: inherit;
   font-size: xx-large;
 }
+
 .weather_icon{
   margin-left: 1rem;
   max-width: 50%;
@@ -120,6 +116,7 @@ body{
   grid-template-columns: repeat(3,auto);
   grid-template-rows: repeat(2,auto);
 }
+
 .label_sub_text{
   font-weight: lighter;
   font-size: 1rem;
@@ -146,18 +143,23 @@ body{
 }
 
 .day-card{
-  display: flex;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);  display: flex;
   flex-direction: column;
   align-items: center;
   gap: .25rem;
   border: 1px solid rgb(81, 81, 81);
   border-radius: 2rem;
   padding: 0.25rem;
+  box-shadow: 0 2.5px 8px rgb(232, 232, 232);
 }
+
 .weather-icons{
   max-width: 50%;
   margin-bottom: 1rem;
 }
+
 .day-card-date{
   font-size: .75rem;
 }
@@ -168,9 +170,11 @@ body{
     display: flex;
     flex-direction: column;
   }
+
   .hour-section{
     padding-top: 10rem;
   }
+
   .day-section{
     display: grid;
     grid-template-columns: repeat(4, 10rem); 
@@ -178,6 +182,7 @@ body{
     align-items: center;
   }
 }
+
 @media (max-width: 700px){
   .day-section{
     display: grid;
@@ -185,6 +190,7 @@ body{
     grid-template-rows: repeat(4, 10rem); 
     align-items: center;
   }
+
   .hour-section{
     padding-top: 20rem;
   }
@@ -197,14 +203,15 @@ body{
     grid-template-rows: repeat(4, 10rem); 
     align-items: center;
   }
+
   .header_left{
     padding-right: 2rem;
     margin-right: 1rem;
   }
+
   .hour-section{
     padding-top: 26rem;
   }
-
 }
 
 @media (max-width: 395px){
@@ -213,22 +220,25 @@ body{
     flex-direction: column;
     align-items: center;
   }
+
   .header_left{
     border-right: none;
   }
+
   .day-section{
     display: grid;
     grid-template-columns: repeat(1, 10rem); 
     grid-template-rows: repeat(6, 10rem); 
     align-items: center;
   }
+
   .top_container{
     padding-bottom: 10rem;
   }
+
   .hour-section{
     padding-top: 58rem;
   }
-
 }
 
 
@@ -243,25 +253,26 @@ body{
 
 
 /* HOURLY SECTION  */
+
 .hour-section{
-  /* background-color: aquamarine; */
   width: 100%;
   text-align: center;
   border-spacing: 0;
 }
 
 .hour-row{
+  color: var(--text-color-light);
   display: flex;
   justify-content: space-around;
-  /* background-color: #ffffff10;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px); */
+  align-items: center;
 }
+
 .hour-row:nth-child(2n) {
-  /* background-color: #ffffff10;
+  background-color: #ffffff10;
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px); */
+  -webkit-backdrop-filter: blur(12px);
 }
+
 .hour-row >  td {
   padding: 0.25rem 0.5rem;
 }
