@@ -168,19 +168,68 @@ body{
     display: flex;
     flex-direction: column;
   }
-  
+  .hour-section{
+    padding-top: 10rem;
+  }
+  .day-section{
+    display: grid;
+    grid-template-columns: repeat(4, 10rem); 
+    grid-template-rows: repeat(4, 10rem); 
+    align-items: center;
+  }
 }
+@media (max-width: 700px){
+  .day-section{
+    display: grid;
+    grid-template-columns: repeat(3, 10rem); 
+    grid-template-rows: repeat(4, 10rem); 
+    align-items: center;
+  }
+  .hour-section{
+    padding-top: 20rem;
+  }
+}
+
 @media (max-width: 520px){
   .day-section{
     display: grid;
     grid-template-columns: repeat(2, 10rem); 
     grid-template-rows: repeat(4, 10rem); 
     align-items: center;
-    /* padding-left: 1rem; */
   }
+  .header_left{
+    padding-right: 2rem;
+    margin-right: 1rem;
+  }
+  .hour-section{
+    padding-top: 26rem;
+  }
+
 }
 
+@media (max-width: 395px){
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_left{
+    border-right: none;
+  }
+  .day-section{
+    display: grid;
+    grid-template-columns: repeat(1, 10rem); 
+    grid-template-rows: repeat(6, 10rem); 
+    align-items: center;
+  }
+  .top_container{
+    padding-bottom: 10rem;
+  }
+  .hour-section{
+    padding-top: 58rem;
+  }
 
+}
 
 
 

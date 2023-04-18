@@ -13,8 +13,8 @@ function positionSuccess({ coords }) {
     )
         .then(renderWeather)
         .catch(e => {
-        // console.error(e)
-        // alert("Error getting weather")
+        console.error(e)
+        alert("Error getting weather")
         })
 }
 
@@ -57,7 +57,6 @@ function renderCurrentWeather(current) {
 
 
 
-
 const DAY_FORMATTER = new Intl.DateTimeFormat(undefined, { weekday:
 "long"})
 const dailySection = document.querySelector("[data-day-section]")
@@ -68,13 +67,11 @@ function renderDailyWeather(daily){
         const element = dayCardTemplate.content.cloneNode(true)
         setValue("temp", day.maxTemp, { parent: element})
         setValue("date", DAY_FORMATTER.format(day.timestamp), { parent: 
-        element })
+        element})
         element.querySelector("[data-icon]").src = getIconUrl(day.iconCode)
         dailySection.append(element)
     })
 }
-
-
 
 
 

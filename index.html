@@ -21,7 +21,6 @@
           <p>Wind 2MPH</p>
         </div>
       </div>
-
       <div class="top_container">
         <div class="header">
           <div class="header_left">
@@ -65,12 +64,12 @@
 <!-- DAYILY SECTION -->
         <section class="day-section" data-day-section>
           <div class="day-card">
-            <img src="/static/img/cloud.png" class="weather-icons">
+            <img data-icon src="/static/img/cloud.png" class="weather-icons">
             <div class="day-card-date">Monday</div>
             <div>32&deg;</div>
           </div>
           <div class="day-card">
-            <img src="/static/img/cloud.png" class="weather-icons">
+            <img src="/static/img/cloud.png" class="weather-icons" data-icon>
             <div class="day-card-date">Tuesday</div>
             <div>32&deg;</div>
           </div>
@@ -378,7 +377,7 @@
     <!-- DAY CARD  -->
     <template id="day-card-template">
       <div class="day-card">
-        <img data-icon class="weather-icon">
+        <img data-icon class="weather-icons">
         <div class="day-card-date" data-date></div>
         <div><span data-temp></span><span>&deg;</span></div>
       </div>
