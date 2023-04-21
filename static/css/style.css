@@ -17,8 +17,23 @@ body{
   font-family: system-ui;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: linear-gradient(to right bottom, #002f75, #28003b);
+}
+/* BACKGROUNDS BASED ON TIME OF DAY  */
+
+.day{
   background-image: linear-gradient(to right bottom, #82d8ff, #0056df);
 }
+.sunset{
+  background-image: linear-gradient(to right bottom, #0652C5, #D4418E);
+}
+.night{
+  background-image: linear-gradient(to right bottom, #002f75, #28003b);
+}
+
+
+
+
 
 
 /* BACKGROUND CLOUDS */
