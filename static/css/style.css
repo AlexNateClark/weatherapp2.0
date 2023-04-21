@@ -17,7 +17,7 @@ body{
   font-family: system-ui;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(to right bottom, #002f75, #28003b);
+  background-image: linear-gradient(to right bottom, #82d8ff, #0056df);
 }
 /* BACKGROUNDS BASED ON TIME OF DAY  */
 
@@ -32,7 +32,15 @@ body{
 }
 
 
-
+/* MOON */
+/* .da-moon{
+  width: 7rem;
+  height: 7rem;
+  top: 5%;
+  background-color: aliceblue;
+  color: aliceblue;
+  border-radius: 50%;
+} */
 
 
 
