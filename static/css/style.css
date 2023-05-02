@@ -1,5 +1,8 @@
 :root {
   --text-color-light: rgb(239, 246, 253);
+  --daytime: linear-gradient(to right bottom, #82d8ff, #0056df);
+  --sunset: linear-gradient(to right bottom, #0652C5, #D4418E);
+  --nighttime: linear-gradient(to right bottom, #002f75, #28003b);
 }
 *,
 *::before,
@@ -17,23 +20,33 @@ body{
   font-family: system-ui;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(to right bottom, #0652C5, #D4418E);
+  background-image: var(--daytime)
 }
+
 /* BACKGROUNDS BASED ON TIME OF DAY  */
 
 .day{
-  background-image: linear-gradient(to right bottom, #82d8ff, #0056df);
+  background-image: var(--daytime)
 }
 .sunset{
-  background-image: linear-gradient(to right bottom, #0652C5, #D4418E);
+  background-image: var(--sunset)
 }
 .night{
-  background-image: linear-gradient(to right bottom, #002f75, #28003b);
+  background-image: var(--nighttime)
 }
+
+
+
+
+
+
+
+
 
 
 /* MOON */
-.da-moon{
+
+/* .da-moon{
   position: fixed;
   margin: auto;
   width: 11rem;
@@ -62,7 +75,26 @@ body{
   3.5rem .5rem 0 -0.1rem #bfbfbf,
   6.5rem -1.5rem 0 0.1rem #bfbfbf,
   5.5rem 5rem 0 0.3rem #a9a9a9;
-}
+} */
+
+
+
+
+
+
+
+
+
+
+/* STARS */
+
+
+
+
+
+
+
+
 
 
 /* BACKGROUND CLOUDS */
@@ -256,6 +288,13 @@ body{
 
 
 
+
+
+
+
+
+
+
 /* TOP HEADER */
 
 .hero{
@@ -364,6 +403,7 @@ body{
 
 
 /* DAILY SECTION  */
+
 .day-section{
   display: grid;
   grid-template-columns: repeat(3, 10rem); 
