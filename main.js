@@ -31,6 +31,7 @@ function renderWeather({ current, daily, hourly}) {
     document.body.classList.remove("blurred")
 }
 
+
 function setValue(selector, value, { parent = document} = {}) {
     parent.querySelector(`[data-${selector}]`).textContent = value
 }
@@ -51,9 +52,6 @@ function renderCurrentWeather(current) {
     setValue("current-wind", current.windSpeed)
     setValue("current-precip", current.precip)
 }
-
-
-
 
 
 
@@ -97,6 +95,20 @@ function renderHourlyWeather(hourly) {
         hourlySection.append(element)
     })
 }
+
+
+
+
+
+
+// create a function that changes the img logos and background 
+// color based on the time of day 
+
+// 1st how do we get the time of day 
+
+// 2nd create an if , if else statement stating if the time of day is this time, then run these imgages 
+
+// 3rd create an if, if else statement stating if the time of day is this time, then run this background 
 
 
 
