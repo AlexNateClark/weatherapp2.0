@@ -20,7 +20,7 @@ body{
   font-family: system-ui;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: var(--daytime)
+  background-image: var(--sunset)
 }
 
 /* BACKGROUNDS BASED ON TIME OF DAY  */
